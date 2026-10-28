@@ -8,6 +8,7 @@ measure checked against an independent reference on Power BI's own engine.**
 ![DAX](https://img.shields.io/badge/DAX-parity%20checked-2EA44F)
 ![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB)
 ![.NET](https://img.shields.io/badge/.NET-TOM%20%C2%B7%20ADOMD-512BD4)
+![License](https://img.shields.io/badge/license-PolyForm%20Noncommercial-orange)
 
 ![Overview page of the generated report in Power BI Desktop](docs/img/overview.png)
 
@@ -129,4 +130,10 @@ CI valida contra los esquemas oficiales de Microsoft y con su Tabular Object Mod
 
 ## License
 
-MIT
+**[PolyForm Noncommercial 1.0.0](LICENSE).** Free to read, study, run and modify for noncommercial
+purposes: personal projects, research, education, and evaluating it for hire. **Any commercial use
+needs a commercial license:** [neyfred@gmail.com](mailto:neyfred@gmail.com).
+
+The vendored JSON schemas in `tests/schemas/` are Microsoft's, under their MIT License.
+
+Versions up to commit `ccdaf59` (2026-10-27) were published under the MIT License.

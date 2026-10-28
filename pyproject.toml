@@ -7,7 +7,7 @@ name = "recovery-bi"
 version = "0.1.0"
 description = "A Power BI report generated as code (TMDL + PBIR) from vendor-recovery-engine findings, with DAX checked to the cent against an independent reference."
 readme = "README.md"
-license = "MIT"
+license = "PolyForm-Noncommercial-1.0.0"
 requires-python = ">=3.11"
 dependencies = ["pandas>=2.2", "pyarrow>=15"]
 
