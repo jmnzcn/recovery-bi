@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+out/
+tools/DaxRunner/bin/
+tools/DaxRunner/obj/
+**/.pbi/localSettings.json
+**/.pbi/cache.abf

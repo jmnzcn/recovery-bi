@@ -1,0 +1,26 @@
+[
+  {
+    "id": "totals",
+    "dax": "EVALUATE ROW ( \"Total Findings\", [Total Findings], \"Claims\", [Claims], \"Recoverable USD\", [Recoverable USD], \"Lost to Window USD\", [Lost to Window USD], \"Expected Value USD\", [Expected Value USD], \"Urgent Claims\", [Urgent Claims], \"Urgent USD\", [Urgent USD], \"Claim Rate\", [Claim Rate], \"Share Lost to Window\", [Share Lost to Window], \"Avg Win Rate\", [Avg Win Rate], \"Needs Review\", [Needs Review], \"Vendors with Claims\", [Vendors with Claims], \"Open Claim USD\", [Open Claim USD] )"
+  },
+  {
+    "id": "by_category",
+    "dax": "EVALUATE SUMMARIZECOLUMNS ( 'Category'[CategoryCode], \"Total Findings\", [Total Findings], \"Claims\", [Claims], \"Recoverable USD\", [Recoverable USD], \"Lost to Window USD\", [Lost to Window USD], \"Expected Value USD\", [Expected Value USD], \"Urgent Claims\", [Urgent Claims], \"Urgent USD\", [Urgent USD], \"Claim Rate\", [Claim Rate], \"Share Lost to Window\", [Share Lost to Window], \"Avg Win Rate\", [Avg Win Rate], \"Needs Review\", [Needs Review], \"Vendors with Claims\", [Vendors with Claims], \"Open Claim USD\", [Open Claim USD] )"
+  },
+  {
+    "id": "by_status",
+    "dax": "EVALUATE SUMMARIZECOLUMNS ( 'Status'[Status], \"Total Findings\", [Total Findings], \"Claims\", [Claims], \"Recoverable USD\", [Recoverable USD], \"Lost to Window USD\", [Lost to Window USD], \"Expected Value USD\", [Expected Value USD], \"Urgent Claims\", [Urgent Claims], \"Urgent USD\", [Urgent USD], \"Claim Rate\", [Claim Rate], \"Share Lost to Window\", [Share Lost to Window], \"Avg Win Rate\", [Avg Win Rate], \"Needs Review\", [Needs Review], \"Vendors with Claims\", [Vendors with Claims], \"Open Claim USD\", [Open Claim USD] )"
+  },
+  {
+    "id": "by_vendor",
+    "dax": "EVALUATE SUMMARIZECOLUMNS ( 'Vendor'[VendorCode], \"Total Findings\", [Total Findings], \"Claims\", [Claims], \"Recoverable USD\", [Recoverable USD], \"Lost to Window USD\", [Lost to Window USD], \"Expected Value USD\", [Expected Value USD], \"Urgent Claims\", [Urgent Claims], \"Urgent USD\", [Urgent USD], \"Claim Rate\", [Claim Rate], \"Share Lost to Window\", [Share Lost to Window], \"Avg Win Rate\", [Avg Win Rate], \"Needs Review\", [Needs Review], \"Vendors with Claims\", [Vendors with Claims], \"Open Claim USD\", [Open Claim USD] )"
+  },
+  {
+    "id": "by_vendor_category",
+    "dax": "EVALUATE SUMMARIZECOLUMNS ( 'Vendor'[VendorCode], 'Category'[CategoryCode], \"Total Findings\", [Total Findings], \"Claims\", [Claims], \"Recoverable USD\", [Recoverable USD], \"Lost to Window USD\", [Lost to Window USD], \"Expected Value USD\", [Expected Value USD], \"Urgent Claims\", [Urgent Claims], \"Urgent USD\", [Urgent USD], \"Claim Rate\", [Claim Rate], \"Share Lost to Window\", [Share Lost to Window], \"Avg Win Rate\", [Avg Win Rate], \"Needs Review\", [Needs Review], \"Vendors with Claims\", [Vendors with Claims], \"Open Claim USD\", [Open Claim USD] )"
+  },
+  {
+    "id": "by_month",
+    "dax": "EVALUATE SUMMARIZECOLUMNS ( 'Date'[Month], \"Recoverable USD\", [Recoverable USD], \"Recoverable USD Running Total\", [Recoverable USD Running Total] )"
+  }
+]

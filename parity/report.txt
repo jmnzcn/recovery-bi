@@ -1,0 +1,8 @@
+﻿engine: Power BI Desktop Analysis Services 17.0.93.23  (2026-10-28T04:29:34Z)
+  totals                   1 rows      13 cells  0 mismatches
+  by_category              8 rows     104 cells  0 mismatches
+  by_status                6 rows      78 cells  0 mismatches
+  by_vendor              170 rows    2210 cells  0 mismatches
+  by_vendor_category    1188 rows   15444 cells  0 mismatches
+  by_month                18 rows      36 cells  0 mismatches
+total: 17885 cells compared, 0 mismatches

@@ -1,0 +1,28 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e ".[dev]"
+      - run: ruff check .
+      - name: Tests (schemas, model rules, reference, DAX parity, determinism)
+        run: pytest -q
+
+  tmdl:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "9.0.x"
+      - name: Parse and validate the semantic model with Microsoft's Tabular Object Model
+        run: dotnet run --project tools/DaxRunner -c Release -- validate powerbi/RecoveryBI.SemanticModel/definition

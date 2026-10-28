@@ -1,0 +1,77 @@
+{
+  "as_of": "2026-07-31",
+  "vendors": 170,
+  "findings": 111224,
+  "claims": 34807,
+  "recoverable_usd": 895010.37,
+  "expired_usd": 216607.4,
+  "urgent_claims": 3003,
+  "urgent_usd": 81055.39,
+  "expected_value_usd": 787871.22,
+  "by_category": [
+    {
+      "category": "SHORTAGE",
+      "findings": 63989,
+      "claimable": 18701,
+      "recoverable_usd": 210208.15,
+      "expired_usd": 57812.8
+    },
+    {
+      "category": "PRICE_CLAIM",
+      "findings": 19360,
+      "claimable": 7100,
+      "recoverable_usd": 41174.64,
+      "expired_usd": 10497.94
+    },
+    {
+      "category": "CHARGEBACK_LATE_SHIPMENT",
+      "findings": 12539,
+      "claimable": 1821,
+      "recoverable_usd": 47845.89,
+      "expired_usd": 16022.56
+    },
+    {
+      "category": "CHARGEBACK_ASN",
+      "findings": 7679,
+      "claimable": 940,
+      "recoverable_usd": 23997.47,
+      "expired_usd": 8116.77
+    },
+    {
+      "category": "DUPLICATE_DEDUCTION",
+      "findings": 1545,
+      "claimable": 1226,
+      "recoverable_usd": 16202.47,
+      "expired_usd": 4233.27
+    },
+    {
+      "category": "UNDERPAYMENT",
+      "findings": 1456,
+      "claimable": 1195,
+      "recoverable_usd": 30516.07,
+      "expired_usd": 6827.43
+    },
+    {
+      "category": "UNPAID_INVOICE",
+      "findings": 1047,
+      "claimable": 847,
+      "recoverable_usd": 476082.01,
+      "expired_usd": 101836.63
+    },
+    {
+      "category": "FX_VARIANCE",
+      "findings": 3609,
+      "claimable": 2977,
+      "recoverable_usd": 48983.67,
+      "expired_usd": 11260.0
+    }
+  ],
+  "by_status": {
+    "NOT_CLAIMABLE": 57033,
+    "CLAIMABLE": 34807,
+    "EXPIRED": 9381,
+    "INSUFFICIENT_EVIDENCE": 5148,
+    "ALREADY_RECOVERED": 4243,
+    "NEEDS_REVIEW": 612
+  }
+}
